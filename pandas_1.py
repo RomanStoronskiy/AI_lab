@@ -7,7 +7,8 @@ Y = data[0]
 X = data.loc[:, 1:]
 kf = KFold(len(y), n_folds=5, shuffle=True, random_state=42)
 print(kf)
-'''
+
+
 data = pandas.read_csv('titanic.csv', index_col='PassengerId')
 a = data['Name']
 names = []
@@ -35,4 +36,3 @@ for i in I:
         name = i
 
 print (name)
-'''
